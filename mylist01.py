@@ -2,9 +2,7 @@
 
 
 def main():
-    movies = []
-    movies.append("Avatar")
-    movies.append("Back to the Future")
+    movies = ["Avatar", "Back to the Future"]
 
     print(movies)
 
