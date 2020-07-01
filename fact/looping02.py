@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def main():
 
     dnsfile = open("dnsservers.txt", "r")
@@ -7,9 +8,10 @@ def main():
     dnslist = dnsfile.readlines()
 
     for server in dnslist:
-        print(server, end = "")
+        print(server, end="")
 
     dnsfile.close()
+
 
 if __name__ == "__main__":
     main()

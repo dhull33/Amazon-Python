@@ -5,11 +5,12 @@ This program harvests SpaceX data avail from https://api.spacexdata.com/v3/cores
 """
 
 # using std library method for getting at API data
-import urllib.request 
+import urllib.request
 import json
 
 # GOBAL / CONSTANT of the API we want to lookup
 SPACEXURI = "https://api.spacexdata.com/v3/cores"
+
 
 def main():
     # create a urllib.request response object by sending an HTTP GET to SPACEXURI
@@ -21,15 +22,15 @@ def main():
     # convert STRING data into Python Lists and Dictionaries
     listOfCores = json.loads(xString)
 
-    count = 1;
+    count = 1
     for core in listOfCores:
 
         coreSerial = core["core_serial"]
         og_launch = core["original_launch"]
         missions = core["missions"]
-        
+
         myString = f"{count}. Core Serial Number: {coreSerial}\n    Original Launch: {og_launch}\n    Missions:\n"
-        if (len(missions) != 0):
+        if len(missions) != 0:
             for mission in missions:
                 myString += f"        Name: {mission.get('name')}, Flight Number: {mission.get('flight')}\n"
 

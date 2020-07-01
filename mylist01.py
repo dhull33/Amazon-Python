@@ -9,9 +9,5 @@ def main():
 
 # Zach says this is the best way to run the main function if we are running the script
 # manually?
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
-
-
-
-

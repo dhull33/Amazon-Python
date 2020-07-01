@@ -1,29 +1,29 @@
 #!/usr/bin/env python3
 
+
 def main():
-    
+
     round = 0
 
     while True:
         round = round + 1
-    
+
         print('Finish the movie, title, "Monty Python\'s The Life of _____"')
 
-        answer = input('Your guess--> ')
+        answer = input("Your guess--> ")
 
-        if (answer == 'Brian'):
-            print('Correct!')
+        if answer == "Brian":
+            print("Correct!")
             break
-    
+
         elif round == 3:
-            print('Sorry, the answer was Brian.')
+            print("Sorry, the answer was Brian.")
             break
 
         else:
             print(answer)
-            print('Sorry! Try again!')
+            print("Sorry! Try again!")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
-
