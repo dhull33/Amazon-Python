@@ -9,7 +9,7 @@ import requests
 
 
 def main():
-    question_request = requests.get("http://jservice.io/api/random?count=10")
+    question_request = requests.get("https://jservice.io/api/random?count=10")
 
     questions = question_request.json()
     number_of_questions = len(questions)
@@ -21,7 +21,7 @@ def main():
         current_answer = questions[number_of_questions - 1]["answer"].lower().strip()
 
         print(current_question)
-        user_answer = input("What is your answer?").lower().strip()
+        user_answer = input("What is your answer? ").lower().strip()
 
         if user_answer == current_answer:
             print("Congratulations! Your answer is correct!")
@@ -40,6 +40,7 @@ def main():
     print("Oh my you are smart!")
     print(f"Your final score is {user_score}.")
     print("Thanks for playing!")
+    quit()
 
 
 if __name__ == "__main__":
