@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+    Author: David Hull
+
+"""
 import pprint
 
 import requests
@@ -8,7 +12,6 @@ def main():
     question_request = requests.get("http://jservice.io/api/random?count=10")
 
     questions = question_request.json()
-    pprint.pprint(questions)
     number_of_questions = len(questions)
 
     user_score = 0
@@ -22,6 +25,7 @@ def main():
 
         if user_answer == current_answer:
             print("Congratulations! Your answer is correct!")
+
             number_of_questions = number_of_questions - 1
             user_score = user_score + 1
 
@@ -33,7 +37,7 @@ def main():
 
             number_of_questions = number_of_questions - 1
 
-    print(f"Oh my you are smart!")
+    print("Oh my you are smart!")
     print(f"Your final score is {user_score}.")
     print("Thanks for playing!")
 
