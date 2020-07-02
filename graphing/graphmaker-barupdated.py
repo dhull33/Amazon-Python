@@ -30,7 +30,7 @@ def main():
 
     # display the graph
     plt.show()
-    plt.savefig("./2018summary.png")
+    plt.savefig("./2018summary.pdf")
 
 
 if __name__ == "__main__":
