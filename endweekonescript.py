@@ -22,7 +22,7 @@ def is_prime(n):
 def large_prime():
     n = int(input("What's the largest prime you want to know? "))
 
-    prim = 5
+    prime = 5
     a = [2, 3]
 
     if n == 1:
@@ -31,9 +31,9 @@ def large_prime():
         return 3
     else:
         while len(a) < n:
-            if is_prime(prim) == True:
-                a.append(prim)
-            prim += 2
+            if is_prime(prime) == True:
+                a.append(prime)
+            prime += 2
 
     return a[-1]
 
