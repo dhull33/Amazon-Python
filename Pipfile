@@ -9,6 +9,7 @@ verify_ssl = true
 requests = "*"
 matplotlib = "==3.0.3"
 python-dotenv = "*"
+xlrd = "*"
 
 [requires]
 python_version = "3.8"

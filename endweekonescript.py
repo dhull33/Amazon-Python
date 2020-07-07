@@ -12,6 +12,13 @@ and is very reliable.
 import math
 
 
+def is_coprime(n, a):
+    if math.gcd(n, a) == 1:
+        return True
+    else:
+        return False
+
+
 def is_prime(n):
     if math.factorial(n - 1) % n == -1 % n:
         return True
