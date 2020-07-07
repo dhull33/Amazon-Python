@@ -11,6 +11,7 @@ matplotlib = "==3.0.3"
 python-dotenv = "*"
 xlrd = "*"
 pandas = "*"
+flask = "*"
 
 [requires]
 python_version = "3.8"
