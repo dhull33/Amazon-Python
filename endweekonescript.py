@@ -12,8 +12,8 @@ and is very reliable.
 import math
 
 
-def is_coprime(n, a):
-    if math.gcd(n, a) == 1:
+def is_coprime(n):
+    if math.gcd(n, n + 1) == 1:
         return True
     else:
         return False
